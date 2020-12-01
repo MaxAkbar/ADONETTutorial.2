@@ -1,0 +1,5 @@
+﻿Get latest sql image from docker hub
+docker pull mcr.microsoft.com/mssql/server
+
+start docker with strong password
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Pa$$w0rd1' -p 1433:1433 -d mcr.microsoft.com/mssql/server
